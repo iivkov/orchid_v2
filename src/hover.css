@@ -1,0 +1,2 @@
+svg text { display: none; }
+svg g:hover text { display: block; }
