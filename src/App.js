@@ -104,7 +104,7 @@ function App() {
   }
 
   const handleLogGeneralOrchidParams = () => {
-    console.log("Opći para,etri voćnjaka: ", orchidParams);
+    console.log("Opći parametri voćnjaka: ", orchidParams);
   }
 
   const handleChangeSaO = (attr, operation) => {
@@ -177,7 +177,7 @@ function App() {
   }
 
   const handleCalculate = () => {
-
+    
   }
 
   /* 
@@ -790,9 +790,9 @@ function App() {
                                     <div>
                                       <InputGroup>
                                         <InputGroup.Text>x2:</InputGroup.Text>
-                                        <input type="number"
+                                        <input type="number" disabled
                                           key={ 'x2' + i }
-                                          value={ (poly.x2).toFixed(2) }
+                                          value={ (poly.x1).toFixed(2) }
                                           className='form-control text-end'
                                           onChange={ (e) => handleChangePolygon('x2', i, e) }
                                         />
@@ -848,9 +848,9 @@ function App() {
                                     <div>
                                       <InputGroup>
                                         <InputGroup.Text>x4:</InputGroup.Text>
-                                        <input type="number"
+                                        <input type="number" disabled
                                           key={ 'x4' + i }
-                                          value={ (poly.x4).toFixed(2) }
+                                          value={ (poly.x3).toFixed(2) }
                                           className='form-control text-end'
                                           onChange={ (e) => handleChangePolygon('x4', i, e) }
                                         />
